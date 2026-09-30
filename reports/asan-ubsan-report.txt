@@ -1,0 +1,15 @@
+# ASan/UBSan Verification Report
+
+Command:
+`gcc -std=c11 -O1 -g -fsanitize=address,undefined -fno-omit-frame-pointer remediated/faculty_module_fixed.c -o /tmp/remediated_asan_ubsan`
+
+Execution:
+`/tmp/remediated_asan_ubsan`
+
+Result:
+- Exit code: 0
+- AddressSanitizer findings: 0
+- UndefinedBehaviorSanitizer findings: 0
+- Program completed normally.
+
+The output shows the five initialized marks, total 425, bonus-adjusted marks, and zero-initialized elements created by the resize.

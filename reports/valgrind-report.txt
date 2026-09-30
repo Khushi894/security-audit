@@ -1,0 +1,9 @@
+# Valgrind Verification Report
+
+Requested command:
+`valgrind --leak-check=full --show-leak-kinds=all --error-exitcode=99 /tmp/remediated_audit`
+
+Result in this environment:
+**Valgrind was not installed, so the requested Valgrind execution could not be performed.**
+
+No claim of a Valgrind-clean run is made. ASan/UBSan was executed successfully; a genuine Valgrind run should be performed on a system with Valgrind installed before submission if the faculty explicitly requires Valgrind output.
